@@ -1,6 +1,5 @@
-def main():
-    print("Hello from llm-task-runner!")
+from tasks.classify import ClassifyTask
 
-
-if __name__ == "__main__":
-    main()
+task = ClassifyTask(labels=["billing", "bug", "feature_request", "other"])
+inp = task.input_model.model_validate({"text": "I was charged twice"})
+print(task.build_prompt(inp))
