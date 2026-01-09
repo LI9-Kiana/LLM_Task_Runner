@@ -21,6 +21,7 @@ def call_llm(prompt: str, model: str = "gpt-4o-mini") -> tuple[str, int]:
         resp = client.responses.create(
             model=model,
             input=prompt,
+            temperature=0,
         )
         text = resp.output_text
     except Exception as e:
