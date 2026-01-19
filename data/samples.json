@@ -1,0 +1,17 @@
+[
+  { "text": "I was charged twice for my subscription this month", "label": "billing" },
+  { "text": "My card keeps getting declined even though it works elsewhere", "label": "billing" },
+  { "text": "I was billed after canceling my plan", "label": "billing" },
+
+  { "text": "The app crashes when I try to upload a file", "label": "bug" },
+  { "text": "Clicking the settings button freezes the screen", "label": "bug" },
+  { "text": "The page shows a blank screen after login", "label": "bug" },
+
+  { "text": "Can you add dark mode support?", "label": "feature_request" },
+  { "text": "Please add an option to export data as CSV", "label": "feature_request" },
+  { "text": "It would be great to have two-factor authentication", "label": "feature_request" },
+
+  { "text": "Thanks for the quick response!", "label": "other" },
+  { "text": "Just wanted to say the product is great", "label": "other" },
+  { "text": "Hello, I have a general question", "label": "other" }
+]
