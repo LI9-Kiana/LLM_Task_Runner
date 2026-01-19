@@ -45,30 +45,50 @@ This project explores how to design a **production-style LLM execution pipeline*
 ---
 
 ## Project Structure
-.
-├── tasks/
-│   ├── base.py            # Abstract task interface and schema definitions
-│   └── classify.py        # Example text classification task
-│
-├── runner/
-│   ├── executor.py        # Low-level LLM invocation
-│   ├── schema.py          # JSON parsing and Pydantic schema validation
-│   ├── retry.py           # Retry and fallback logic for failed generations
-│   └── logger.py          # Lightweight structured logging for task runs
-│
-├── eval/
-│   ├── dataset.py         # Dataset loading and validation
-│   ├── metrics.py         # Accuracy, failure rate, and latency metrics
-│   └── evaluate.py        # Evaluation orchestration
-│
-├── data/
-│   └── sample.json        # Labeled evaluation dataset
-│
-├── configs/
-│   ├── models.yaml        # Model configuration (provider, params)
-│   └── load.py            # Config loading utilities
-│
-├── main.py                # Example task execution entry point
-└── README.md
 
+### Tasks
+- `tasks/base.py`  
+  Abstract task interface and shared schema definitions.
 
+- `tasks/classify.py`  
+  Example text classification task implementation.
+
+### Runner
+- `runner/executor.py`  
+  Low-level LLM invocation logic.
+
+- `runner/schema.py`  
+  JSON extraction and Pydantic schema validation.
+
+- `runner/retry.py`  
+  Retry and fallback logic for failed generations.
+
+- `runner/logger.py`  
+  Structured logging utilities for task runs.
+
+### Evaluation
+- `eval/dataset.py`  
+  Dataset loading and validation.
+
+- `eval/metrics.py`  
+  Accuracy, failure rate, and latency metrics.
+
+- `eval/evaluate.py`  
+  Evaluation orchestration and reporting.
+
+### Data
+- `data/sample.json`  
+  Small, human-labeled dataset used for evaluation.
+
+### Configuration
+- `configs/models.yaml`  
+  Model configuration (provider, parameters).
+
+- `configs/load.py`  
+  Configuration loading utilities.
+
+### Entry Point
+- `main.py`  
+  Example task execution entry point.
+
+---
